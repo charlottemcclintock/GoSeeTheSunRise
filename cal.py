@@ -1,8 +1,9 @@
 
-from ics import Calendar, Event, Alarm
+from ics import Calendar, Event, DisplayAlarm
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta 
 import numpy as np
+
 
 # read in sunrise/sunset data
 sunnov = pd.read_csv('sun-patterns-nov1jun1.csv')
@@ -49,6 +50,7 @@ for i, row in sun.head(4).iterrows():
     e = Event()
     e.name = row['title']
     e.begin = row['value']
+    e.alarm = [DisplayAlarm(trigger=timedelta(minutes=-5))]
     # e.description = row['desc'] # TO DO 
     c.events.add(e)
 
