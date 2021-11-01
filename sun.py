@@ -53,4 +53,3 @@ sun['sunset'] = sun['sunset'].apply(lambda x: x.tz_localize('UTC').tz_convert('U
 # write back to csv
 sun.to_csv("sun-patterns-jun2dec31.csv")
 
-# get terminal working in vs code

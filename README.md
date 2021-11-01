@@ -8,4 +8,8 @@ data from [Sunrise Sunset API](https://sunrise-sunset.org/api)
 
 - ~~add sun emoji to title~~
 - add fun sunny phrases to description
+- add alert to calendar event
+
+## big ideas
+
 - make downloadable/addable online?
