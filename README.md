@@ -6,6 +6,6 @@ data from [Sunrise Sunset API](https://sunrise-sunset.org/api)
 
 ## ideas for mods/extentions:
 
-- add sun emoji to title
+- ~~add sun emoji to title~~
 - add fun sunny phrases to description
 - make downloadable/addable online?
