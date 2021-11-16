@@ -46,7 +46,7 @@ sunset_phrases = []
 c = Calendar()
 
 # loop over dates and create calendar events, add to calendar
-for i, row in sun.head(4).iterrows():
+for i, row in sun.iterrows():
     e = Event()
     e.name = row['title']
     e.begin = row['value']
