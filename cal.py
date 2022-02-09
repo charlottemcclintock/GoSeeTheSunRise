@@ -6,11 +6,11 @@ import numpy as np
 
 
 # read in sunrise/sunset data
-sunnov = pd.read_csv('sun-patterns-nov1jun1.csv')
-sunjun = pd.read_csv('sun-patterns-jun2dec31.csv')
+sun = pd.read_csv('sun-patterns-febdec-dc.csv')
+#sunjun = pd.read_csv('sun-patterns-jun2dec31.csv')
 
 # append together
-sun = sunnov.append(sunjun)
+#sun = sunnov.append(sunjun)
 
 # wide to long
 sun = pd.melt(sun, id_vars='date', value_vars=['sunrise', 'sunset'])
@@ -55,6 +55,6 @@ for i, row in sun.iterrows():
     c.events.add(e)
 
 # write out as ics file
-with open('sun.ics', 'w') as my_file:
+with open('sun-dc-febdec.ics', 'w') as my_file:
     my_file.writelines(c)
 
